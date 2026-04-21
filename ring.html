@@ -1,0 +1,235 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Smart Health & Control Ring - NOVA TECH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <style>
+        /* 1. 核心布局锁定 */
+        #main > .wrapper { background: #fff !important; color: #333 !important; padding: 4em 0; }
+        .inner { max-width: 1200px; margin: 0 auto; padding: 0 2em; }
+        
+        .product-flex-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col-left { flex: 0 0 47%; max-width: 47%; } 
+        .col-right { flex: 0 0 47%; max-width: 47%; padding-top: 10px; text-align: left; }
+
+        @media screen and (max-width: 980px) {
+            .col-left, .col-right { flex: 0 0 100%; max-width: 100%; }
+            .col-right { margin-top: 2em; }
+        }
+
+        /* 轮播图样式 */
+        .main-slider img { width: 100%; border: 1px solid #f2f2f2; aspect-ratio: 1/1; object-fit: cover; border-radius: 4px; }
+
+        /* 右侧详情文案 */
+        .company-tag { color: #aaa; font-size: 0.85em; letter-spacing: 2px; margin-bottom: 12px; display: block; font-weight: 600; text-transform: uppercase; }
+        .product-title { font-size: 1.8em; font-weight: 600; color: #000 !important; margin-bottom: 10px; line-height: 1.1; letter-spacing: -1px; border: none !important; padding: 0 !important; }
+        .sku-tag { font-size: 0.9em; color: #666; margin-bottom: 30px; display: block; font-weight: 700; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        
+        /* 功能亮点区域 */
+        .tech-highlights { margin-top: 2.5em; }
+        .tech-highlights h3 { font-size: 1.1em; color: #000; letter-spacing: 1px; margin-bottom: 1.5em; border: none !important; font-weight: 800; text-transform: uppercase; }
+        .feat-item { margin-bottom: 2.5em; }
+        .feat-title-row { display: flex; align-items: center; margin-bottom: 0.8em; }
+        .feat-title-row span { font-size: 1.3em; width: 30px; }
+        .feat-title-row strong { margin-left: 5px; color: #000; font-size: 1.05em; font-weight: 800; }
+        .feat-desc { padding-left: 35px; color: #666; font-size: 0.95em; line-height: 1.6; margin: 0; }
+
+        /* 询盘按钮：居中对齐 */
+        .btn-container { 
+            margin-top: 60px; 
+            text-align: center; /* 确保容器内元素居中 */
+            width: 100%;
+        }
+        .whatsapp-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            background: #000 !important; 
+            color: #fff !important; 
+            width: 300px; 
+            padding: 18px 0; 
+            text-decoration: none !important; 
+            font-weight: 700; 
+            font-size: 0.85em; 
+            letter-spacing: 2px; 
+            border-radius: 2px;
+            transition: 0.3s;
+            margin: 0 auto; /* 居中保险 */
+        }
+        .whatsapp-btn:hover { background: #333 !important; }
+        .whatsapp-btn i { margin-right: 12px; font-size: 1.4em; color: #fff; }
+
+        /* FAQ 部分样式 */
+        .faq-outer { background: #f9f9f9; padding: 6em 2em; margin-top: 6em; border-top: 1px solid #eee; }
+        .faq-inner { max-width: 900px; margin: 0 auto; }
+        .faq-item { background: #fff; border: 1px solid #eee; border-radius: 4px; padding: 30px; margin-bottom: 25px; text-align: left; }
+        
+        .faq-q { font-size: 1.05em; font-weight: 800; color: #000 !important; display: flex; align-items: center; margin-bottom: 15px; text-transform: uppercase; }
+        .faq-q::before { 
+            content: "Q:"; 
+            color: #000 !important; 
+            font-weight: 900;
+            margin-right: 15px;
+            border-left: 5px solid #000; 
+            padding-left: 12px;
+        }
+        .faq-a { font-size: 0.95em; color: #666; line-height: 1.8; padding-left: 32px; margin: 0; }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+        <header id="header">
+            <h1><a href="index.html">NOVA</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>MENU</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="skin-care-devices.html">SKIN CARE DEVICES</a></li>
+                                <li><a href="haircare.html">HEALTHY HAIR CARE</a></li>
+                                <li><a href="wellness.html">HOLISTIC WELLNESS TECH</a></li>
+                                <li><a href="daily.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article id="main">
+            <section class="wrapper style5">
+                <div class="inner">
+                    <div class="product-flex-container">
+                        <div class="col-left">
+                            <div class="main-slider">
+                                <div><img src="images/ring_1.jpg" alt="Smart Ring"></div>
+                                <div><img src="images/ring_2.jpg" alt="Smart Ring Interaction"></div>
+                                <div><img src="images/ring_3.jpg" alt="Smart Ring App"></div>
+                                <div><img src="images/ring_4.jpg" alt="Smart Ring Monitoring"></div>
+                                <div><img src="images/ring_5.jpg" alt="Smart Ring Design"></div>
+                                <div><img src="images/ring_6.jpg" alt="Smart Ring Details"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-right">
+                            <span class="company-tag">NOVA TECH SOLUTIONS</span>
+                            <h2 class="product-title">SMART HEALTH & CONTROL RING</h2>
+                            <span class="sku-tag">SKU: NV-SR2026</span>
+                            
+                            <div class="tech-highlights">
+                                <h3>Core Capabilities</h3>
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>🖱️</span> <strong>Gesture & Touch Interaction</strong>
+                                    </div>
+                                    <p class="feat-desc">Seamlessly control music, short videos, and your phone's camera with intuitive side-touch and gesture recognition.</p>
+                                </div>
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>📊</span> <strong>Bio-Metric Health Tracking</strong>
+                                    </div>
+                                    <p class="feat-desc">Advanced optical sensors provide 24/7 heart rate, blood oxygen (SpO2), and scientific sleep stage analysis.</p>
+                                </div>
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>🔋</span> <strong>Ultra-Thin OLED Display</strong>
+                                    </div>
+                                    <p class="feat-desc">Integrated energy-efficient OLED screen displays real-time vitals, time, and notifications at a glance.</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-container">
+                                <a href="https://wa.me/8615919964927" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> INQUIRY VIA WHATSAPP
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-outer">
+                    <div class="faq-inner">
+                        <h3 style="text-align: center; font-weight: 800; margin-bottom: 4em; letter-spacing: 3px; color: #000;">FACTORY FAQ & B2B SERVICES</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-q">DO YOU SUPPORT OEM/ODM PRIVATE LABELING?</div>
+                            <p class="faq-a">Yes, we provide professional OEM/ODM services, including custom brand logo engraving, ring color customization, and bespoke App interfaces.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT IS THE SAMPLE LEAD TIME?</div>
+                            <p class="faq-a">Standard evaluation samples are typically prepared and dispatched within 3-5 business days via premium air courier.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">DOES THIS DEVICE COMPLY WITH GLOBAL STANDARDS?</div>
+                            <p class="faq-a">Our smart rings are CE, RoHS, and FCC certified to ensure full compliance for entry into European and North American markets.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT IS THE MINIMUM ORDER QUANTITY (MOQ)?</div>
+                            <p class="faq-a">MOQ for neutral stock starts at 50 units. Customized branding or private label projects typically require 500+ units.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT IS THE WARRANTY PERIOD?</div>
+                            <p class="faq-a">We provide a 12-month quality guarantee and offer comprehensive technical support for any manufacturing-related issues.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT ARE YOUR ACCEPTED PAYMENT METHODS?</div>
+                            <p class="faq-a">We accept T/T (Bank Transfer), Alipay (International/Domestic), and Western Union to ensure a secure and flexible transaction process.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; NOVA TECH</li>
+                <li>WhatsApp: +86 159-1996-4927</li>
+                <li>Email: thea@nova-teches.com</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

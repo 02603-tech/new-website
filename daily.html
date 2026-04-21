@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>NOVA TECH SOLUTIONS | Professional B2B Manufacturing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        #main > .wrapper { background: #fff !important; color: #333 !important; padding: 4em 0; }
+        .inner { max-width: 1100px; margin: 0 auto; padding: 0 2em; }
+
+        /* --- 核心改动：图片对齐控制 --- */
+        /* 创建一个统一的图片包裹类，确保两张大图宽度完全一致 */
+        .full-width-img-wrap {
+            width: 100%;
+            max-width: 900px; /* 这里控制对齐的宽度，你可以根据喜好调大或调小 */
+            margin: 0 auto;
+            display: block;
+        }
+        .full-width-img-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            border: 1px solid #eee; /* 给证书图加个微边框，更有质感 */
+        }
+
+        /* 1. 关于我们 (保持上下结构) */
+        .about-section { text-align: center; margin-bottom: 5em; }
+        .about-text { margin-bottom: 2em; max-width: 900px; margin-left: auto; margin-right: auto; }
+        .about-title { font-size: 2.8em; font-weight: 800; color: #000; margin-bottom: 0.8em; text-transform: uppercase; }
+        .about-desc { font-size: 1.1em; color: #555; line-height: 1.8; text-align: justify; }
+
+        /* 2. Showcase 展示图 (现在和上面对齐) */
+        .showcase-container { margin: 5em auto 3em auto; }
+
+        /* 3. SEO 爬虫板块 (保持之前要求，无黑线) */
+        .seo-section { 
+            background: #fafafa; 
+            padding: 5em 0; 
+            margin-bottom: 4em; 
+            border-top: 1px solid #eee; 
+            border-bottom: 1px solid #eee; 
+        }
+        .seo-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 25px; 
+        }
+        .seo-card {
+            background: #fff !important;
+            border: 1px solid #eee;
+            border-radius: 8px; 
+            padding: 35px;
+            transition: all 0.3s ease;
+        }
+        .seo-card h3 { font-size: 1.1em; font-weight: 800; color: #2e3842; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .seo-card p { font-size: 0.9em; color: #666; line-height: 1.7; margin: 0; }
+
+       /* 4. 产品分类链接 - 优化横排显示 */
+.related-section { 
+    margin-top: 4em; 
+    padding: 3em 0; 
+    border-top: 1px solid #eee; 
+}
+
+.product-link-grid { 
+    display: flex;            /* 开启 Flex 布局，实现横排 */
+    justify-content: center;  /* 居中对齐 */
+    gap: 20px;               /* 产品之间的间距 */
+    flex-wrap: nowrap;       /* 强制不换行 */
+}
+
+.prod-link-card { 
+    flex: 1;                 /* 每个产品平均分配宽度 */
+    max-width: 300px;        /* 限制单个产品的最大宽度，防止图片太大 */
+    text-align: center; 
+    text-decoration: none !important; 
+    border: 1px solid #eee; 
+    padding: 15px;           /* 缩小内边距，更紧致 */
+    transition: 0.3s; 
+}
+
+.prod-link-card .img-wrap { 
+    width: 100%;
+    aspect-ratio: 1/1;       /* 强制图片容器为正方形 */
+    background: #f9f9f9; 
+    margin-bottom: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+
+.prod-link-card .img-wrap img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;       /* 核心：图片自动填充并裁剪，保证高度统一且不巨大 */
+}
+
+.prod-link-card span { 
+    font-weight: 700; 
+    font-size: 0.85em;       /* 稍微调小字号，匹配精致的图片 */
+    color: #2e3842; 
+    text-transform: uppercase; 
+    line-height: 1.4;
+    display: block;
+}
+
+        /* 5. 底部询盘按钮 - 白色图标 */
+        .cta-container { text-align: center; padding: 5em 0; background: #fff; }
+        .whatsapp-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            background: #000; 
+            color: #fff !important; 
+            padding: 1.2em 3em; 
+            font-weight: 600; 
+            border-radius: 4px;
+            transition: 0.3s ease;
+            font-size: 0.8em;
+        }
+        .whatsapp-btn:hover { background: #25D366; }
+        .whatsapp-btn i { margin-right: 12px; font-size: 1.4em; color: #fff !important; }
+
+        @media (max-width: 768px) {
+            .seo-grid, .product-link-grid { grid-template-columns: 1fr; }
+            .whatsapp-btn { width: 100%; }
+        }
+    </style>
+</head>
+<body class="is-preload">
+
+    <div id="page-wrapper">
+
+        <header id="header">
+            <h1><a href="index.html">NOVA TECH</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>MENU</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="skin-care-devices.html">SKIN CARE DEVICES</a></li>
+                                <li><a href="haircare.html">HEALTHY HAIR CARE</a></li>
+                                <li><a href="wellness.html">HOLISTIC WELLNESS TECH</a></li>
+                                <li><a href="daily.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="main">
+            <section class="wrapper style5">
+                <div class="inner">
+
+                    <div id="about" class="about-section">
+                        <div class="about-text">
+                            <h2 class="about-title">About Us</h2>
+                            <p class="about-desc">
+                                <strong>Shenzhen Nuomeiwei Technology Co., Ltd.</strong> is a premier manufacturer specializing in the R&D, production, and distribution of high-quality Beauty Devices and Smart Personal Care electronics. With our advanced in-house mold and injection workshops, we provide comprehensive <strong>OEM/ODM solutions</strong> for global partners.
+                            </p>
+                        </div>
+                        <div class="full-width-img-wrap">
+                            <img src="images/about-us.jpg" alt="NOVA TECH Certification">
+                        </div>
+                    </div>
+
+                    <div class="full-width-img-wrap showcase-container">
+                        <img src="images/showcase.png" alt="Manufacturing Showcase">
+                    </div>
+
+                    <div class="seo-section">
+                        <div class="inner">
+                            <div class="seo-grid">
+                                <div class="seo-card">
+                                    <h3>OEM/ODM Factory</h3>
+                                    <p>Comprehensive manufacturing solutions including industrial design, custom tooling, and high-volume production.</p>
+                                </div>
+                                <div class="seo-card">
+                                    <h3>Quality Certified</h3>
+                                    <p>Rigorous QC protocols and ISO-compliant production. Certified by CE, FDA, FCC, and RoHS.</p>
+                                </div>
+                                <div class="seo-card">
+                                    <h3>R&D Innovation</h3>
+                                    <p>Expert engineering team focused on developing cutting-edge personal care technology.</p>
+                                </div>
+                                <div class="seo-card">
+                                    <h3>Global Supply Chain</h3>
+                                    <p>Reliable logistics and extensive export experience, delivering to over 50 countries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="related-section">
+    <h3 style="text-align: center; margin-bottom: 2.5em; letter-spacing: 2px; font-weight: 700;">YOU MAY ALSO LIKE</h3>
+    <div class="product-link-grid">
+        <a href="cleansing-brush-details.html" class="prod-link-card">
+            <div class="img-wrap"><img src="images/cleansing_brush_1.jpg" alt="Eye Care"></div>
+            <span>5 in 1 Electric Facial Cleansing Brush Device</span>
+        </a>
+        <a href="comb.html" class="prod-link-card">
+            <div class="img-wrap"><img src="images/comb_1.jpg" alt="Personal Care"></div>
+            <span>Multifunctional EMS & LED Meridian Massage Comb</span>
+        </a>
+        <a href="smart-guasha.html" class="prod-link-card">
+            <div class="img-wrap"><img src="images/guasha_7.jpg" alt="Laser Comb"></div>
+            <span>SMART ELECTRIC GUASHA & CUPPING MASSAGER</span>
+        </a>
+    </div>
+</div>
+                    <div class="cta-container">
+                        <h4 style="font-weight: 800; color: #000; margin-bottom: 2em;">READY TO START YOUR PROJECT?</h4>
+                        <a href="https://wa.me/8615919964927" class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> INQUIRY VIA WHATSAPP
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+
+         <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; NOVA TECH</li>
+                <li>WhatsApp: +86 159-1996-4927</li>
+                <li>Email: thea@nova-teches.com</li>
+            </ul>
+        </footer>
+    </div>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
+

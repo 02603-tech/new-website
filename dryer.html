@@ -1,0 +1,215 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>High-Speed Hair Dryer - NOVA TECH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <style>
+        #main > .wrapper { background: #fff !important; color: #444 !important; padding: 0; }
+        .inner { max-width: 1200px; margin: 0 auto; padding: 0 2em; }
+        
+        /* 1. 顶部结构 */
+        .product-hero { display: flex; gap: 3em; padding: 4em 0; align-items: flex-start; }
+        .hero-gallery { flex: 0 0 50%; min-width: 0; }
+        .hero-details { flex: 1; }
+        .main-slider img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 4px; }
+
+        /* 2. 功能卡片与模式：2x2 布局 */
+        .feature-grid, .mode-container { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px; }
+        .feature-card, .mode-item { background: #f8f8f8; padding: 2.2em 1.5em; text-align: center; border-radius: 4px; }
+        .feature-card i { font-size: 1.3em; color: #1b2127; margin-bottom: 12px; display: block; }
+        .feature-card span, .mode-label { font-weight: 700; color: #1b2127; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; }
+        .mode-text { color: #444; font-size: 0.9em; margin-top: 10px; line-height: 1.4; }
+
+        /* 3. 询盘按钮：居中显示 */
+        .btn-wrapper { text-align: center; padding: 2em 0 4em 0; }
+        .btn-whatsapp { 
+            background: #1b2127 !important; color: #fff !important; 
+            padding: 16px 40px; border-radius: 4px; font-weight: 700; 
+            display: inline-flex; align-items: center; gap: 12px;
+            text-decoration: none !important; font-size: 0.9em;
+            text-transform: uppercase; letter-spacing: 1px;
+        }
+
+        /* 4. 相关产品链接 */
+        .complementary-section { padding: 4em 0; border-top: 1px solid #eee; text-align: center; }
+        .complementary-title { font-size: 1.2em; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 3em; }
+        .comp-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; }
+        .comp-item { text-decoration: none; }
+        .comp-img { width: 100%; aspect-ratio: 1/1; background: #f9f9f9; margin-bottom: 1.5em; border-bottom: 1px solid #eee; }
+        .comp-name { font-size: 0.75em; font-weight: 700; color: #1b2127; text-transform: uppercase; letter-spacing: 1px; padding-top: 15px; display: block; }
+
+        /* 5. FAQ 布局：6条 严格横排到底 (100% 宽度) */
+        .faq-outer { background: #fafafa; padding: 6em 0; border-top: 1px solid #eee; }
+        .faq-list { max-width: 1000px; margin: 3em auto 0 auto; }
+        .faq-item { background: #fff; padding: 2.5em; margin-bottom: 20px; border-radius: 4px; position: relative; width: 100%; }
+        /* 左侧黑色竖线装饰 */
+        .faq-item::before { content: ""; position: absolute; left: 2.5em; top: 2.5em; width: 2px; height: 20px; background: #1b2127; }
+        .faq-q { font-weight: 700; color: #1b2127; font-size: 0.85em; text-transform: uppercase; padding-left: 15px; margin-bottom: 1.2em; display: block; }
+        .faq-a { color: #666; font-size: 0.95em; line-height: 1.7; margin: 0; }
+
+        /* WhatsApp Button */
+        .btn-whatsapp-container { text-align: center; margin: 3em 0; width: 100%; }
+        .btn-whatsapp { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center; 
+            background-color: #1b2127 !important; 
+            color: #ffffff !important; 
+            text-decoration: none !important; 
+            padding: 14px 40px; 
+            border-radius: 4px; 
+            font-weight: 600; 
+            letter-spacing: 1.5px; 
+            font-size: 0.9em; 
+            min-width: 300px; 
+            transition: 0.3s; 
+            text-transform: uppercase;
+            border: none;
+        }
+        .btn-whatsapp:hover { background-color: #4f5d6a !important; transform: translateY(-1px); }
+        .btn-whatsapp i { margin-right: 12px; font-size: 1.3em; color: inherit !important; }
+
+        @media screen and (max-width: 980px) {
+            .product-hero, .comp-grid, .feature-grid, .mode-container { grid-template-columns: 1fr; display: block; }
+            .hero-gallery, .comp-item, .feature-card, .mode-item { margin-bottom: 20px; }
+        }
+    </style>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <header id="header">
+            <h1><a href="index.html">NOVA</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>MENU</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="skin-care-devices.html">SKIN CARE DEVICES</a></li>
+                                <li><a href="haircare.html">HEALTHY HAIR CARE</a></li>
+                                <li><a href="wellness.html">HOLISTIC WELLNESS TECH</a></li>
+                                <li><a href="daily.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <article id="main">
+            <section class="wrapper style5">
+                <div class="inner">
+                    <div class="product-hero">
+                        <div class="hero-gallery">
+                            <div class="main-slider">
+                                <div><img src="images/dryer_7.jpg"></div>
+                                <div><img src="images/dryer_8.jpg"></div>
+                                <div><img src="images/dryer_9.jpg"></div>
+                                <div><img src="images/dryer_10.jpg"></div>
+                                <div><img src="images/dryer_11.jpg"></div>
+                                <div><img src="images/dryer_12.jpg"></div>
+                            </div>
+                        </div>
+                        <div class="hero-details">
+                            <span class="company-name">Nova Professional Beauty</span>
+                            <h2 class="product-title">NEW HIGH-SPEED HAIR DRYER</h2>
+                            <span class="sku-tag">SKU: NV-HD202-FAST</span>
+                            
+                            <div class="feature-grid">
+                                <div class="feature-card"><i class="fas fa-tachometer-alt"></i><span>110,000 RPM</span></div>
+                                <div class="feature-card"><i class="fas fa-atom"></i><span>NEGATIVE IONS</span></div>
+                                <div class="feature-card"><i class="fas fa-thermometer-half"></i><span>CONSTANT TEMP</span></div>
+                                <div class="feature-card"><i class="fas fa-layer-group"></i><span>12 COMBINATIONS</span></div>
+                            </div>
+
+                            <div class="mode-container">
+                                <div class="mode-item">
+                                    <span class="mode-label">MODE 1</span>
+                                    <p class="mode-text">High Wind + 100°C Fast Drying</p>
+                                </div>
+                                <div class="mode-item">
+                                    <span class="mode-label">MODE 2</span>
+                                    <p class="mode-text">Cold/Heat Circulation Mode</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-wrapper">
+                                <a href="https://wa.me/8615919964927" class="btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> INQUIRY VIA WHATSAPP
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="faq-outer">
+                    <div class="inner">
+                        <h3 style="text-align: center; text-transform: uppercase; letter-spacing: 2px;">FACTORY FAQ & B2B SERVICES</h3>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <span class="faq-q">Q: DO YOU SUPPORT OEM/ODM PRIVATE LABELING?</span>
+                                <p class="faq-a">Yes, we specialize in private label services, including logo printing, custom packaging, and color modifications.</p>
+                            </div>
+                            <div class="faq-item">
+                                <span class="faq-q">Q: WHAT IS THE SAMPLE LEAD TIME?</span>
+                                <p class="faq-a">Samples are usually dispatched within 3-5 business days for your quality evaluation.</p>
+                            </div>
+                            <div class="faq-item">
+                                <span class="faq-q">Q: DOES THIS DEVICE COMPLY WITH GLOBAL STANDARDS?</span>
+                                <p class="faq-a">Yes, our products carry CE, RoHS, and FCC certifications for international markets.</p>
+                            </div>
+                            <div class="faq-item">
+                                <span class="faq-q">Q: WHAT IS THE MINIMUM ORDER QUANTITY?</span>
+                                <p class="faq-a">We support low MOQ for trial orders and full container loading for established wholesalers.</p>
+                            </div>
+                            <div class="faq-item">
+                                <span class="faq-q">Q: DO YOU PROVIDE EU/UK/US PLUGS?</span>
+                                <p class="faq-a">Yes, we provide standard plugs for different regions, and all units are factory in-stock.</p>
+                            </div>
+                            <div class="faq-item">
+                                <span class="faq-q">Q: DO YOU SUPPORT MIXED COLORS?</span>
+                                <p class="faq-a">Absolutely. You can mix multiple color variants in a single shipment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; NOVA TECH</li>
+                <li>WhatsApp: +86 159-1996-4927</li>
+                <li>Email: thea@nova-teches.com</li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main-slider').slick({ dots: true, autoplay: true, arrows: false });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+

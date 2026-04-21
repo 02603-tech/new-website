@@ -1,0 +1,266 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Smart White Noise Aroma Diffuser - NOVA TECH</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <style>
+        /* 1. 核心布局锁定 */
+        #main > .wrapper { background: #fff !important; color: #333 !important; padding: 4em 0; }
+        .inner { max-width: 1200px; margin: 0 auto; padding: 0 2em; }
+        
+        .product-flex-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col-left { flex: 0 0 47%; max-width: 47%; } 
+        .col-right { flex: 0 0 47%; max-width: 47%; padding-top: 10px; text-align: left; }
+
+        @media screen and (max-width: 980px) {
+            .col-left, .col-right { flex: 0 0 100%; max-width: 100%; }
+            .col-right { margin-top: 2em; }
+        }
+
+        /* 轮播图样式 */
+        .main-slider img { width: 100%; border: 1px solid #f2f2f2; aspect-ratio: 1/1; object-fit: cover; border-radius: 4px; }
+
+        /* 右侧详情文案：专业排版 */
+        .company-tag { color: #aaa; font-size: 0.85em; letter-spacing: 2px; margin-bottom: 12px; display: block; font-weight: 600; text-transform: uppercase; }
+        .product-title { 
+            font-size: 1.8em; 
+            font-weight: 600; 
+            color: #000 !important; 
+            margin-bottom: 10px; 
+            line-height: 1.2; 
+            letter-spacing: -0.5px; 
+            border: none !important; 
+            padding: 0 !important; 
+        }
+        .sku-tag { font-size: 0.9em; color: #666; margin-bottom: 30px; display: block; font-weight: 700; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        
+        /* 功能点排版 */
+        .tech-highlights { margin-top: 2.5em; }
+        .tech-highlights h3 { font-size: 1.1em; color: #000; letter-spacing: 1px; margin-bottom: 1.5em; border: none !important; font-weight: 800; text-transform: uppercase; }
+        .feat-item { margin-bottom: 2.5em; }
+        .feat-title-row { display: flex; align-items: center; margin-bottom: 0.8em; }
+        .feat-title-row span { font-size: 1.3em; width: 30px; }
+        .feat-title-row strong { margin-left: 5px; color: #000; font-size: 1.05em; font-weight: 800; }
+        .feat-desc { padding-left: 35px; color: #666; font-size: 0.95em; line-height: 1.6; margin: 0; }
+
+        /* 询盘按钮：居中 + 300px */
+        .btn-container { margin-top: 60px; text-align: center; width: 100%; }
+        .whatsapp-btn { 
+            display: inline-flex; 
+            align-items: center; 
+            justify-content: center;
+            background: #000 !important; 
+            color: #fff !important; 
+            width: 300px; 
+            padding: 18px 0; 
+            text-decoration: none !important; 
+            font-weight: 700; 
+            font-size: 0.85em; 
+            letter-spacing: 2px; 
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .whatsapp-btn:hover { background: #333 !important; }
+        .whatsapp-btn i { margin-right: 12px; font-size: 1.4em; color: #fff; }
+
+        /* FAQ：纯白卡片 + 黑色粗竖线还原 */
+        .faq-outer { background: #f9f9f9; padding: 6em 2em; margin-top: 6em; border-top: 1px solid #eee; }
+        .faq-inner { max-width: 900px; margin: 0 auto; }
+        
+        .faq-item { 
+            background: #fff; 
+            border: 1px solid #eee; 
+            border-radius: 4px; 
+            padding: 30px; 
+            margin-bottom: 25px; 
+            text-align: left; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        
+        .faq-q { 
+            font-size: 1.05em; 
+            font-weight: 800; 
+            color: #000 !important; 
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 15px; 
+            text-transform: uppercase; 
+        }
+        
+        .faq-q::before { 
+            content: "Q:"; 
+            color: #000 !important; 
+            font-weight: 900;
+            margin-right: 15px;
+            border-left: 5px solid #000; /* 标志性黑色竖线 */
+            padding-left: 12px;
+            display: inline-block;
+        }
+        .faq-a { font-size: 0.95em; color: #666; line-height: 1.8; padding-left: 32px; margin: 0; }
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="page-wrapper">
+        <body class="is-preload">
+    <div id="page-wrapper">
+       <header id="header">
+            <h1><a href="index.html">NOVA</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>MENU</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="skin-care-devices.html">SKIN CARE DEVICES</a></li>
+                                <li><a href="haircare.html">HEALTHY HAIR CARE</a></li>
+                                <li><a href="wellness.html">HOLISTIC WELLNESS TECH</a></li>
+                                <li><a href="daily.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <article id="main">
+            <section class="wrapper style5">
+                <div class="inner">
+                    <div class="product-flex-container">
+                        <div class="col-left">
+                            <div class="main-slider">
+                                <div><img src="images/aroma_1.jpg" alt="White Noise Aroma Diffuser"></div>
+                                <div><img src="images/aroma_2.jpg" alt="Sleep Therapy Sound"></div>
+                                <div><img src="images/aroma_3.jpg" alt="7-Color Ambient Light"></div>
+                                <div><img src="images/aroma_4.jpg" alt="Ultrasonic Mist Detail"></div>
+                                <div><img src="images/aroma_5.jpg" alt="Bluetooth Speaker Feature"></div>
+                                <div><img src="images/aroma_6.jpg" alt="Product Packaging"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-right">
+                            <span class="company-tag">NOVA TECH SOLUTIONS</span>
+                            <h2 class="product-title">SMART WHITE NOISE THERAPY LAMP & AROMA DIFFUSER</h2>
+                            <span class="sku-tag">SKU: NV-WNA2026</span>
+                            
+                            <div class="tech-highlights">
+                                <h3>Wellness Capabilities</h3>
+
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>🎶</span> 
+                                        <strong>Integrated White Noise Therapy</strong>
+                                    </div>
+                                    <p class="feat-desc">Features 9 high-fidelity natural sounds (rain, ocean, brook, etc.) to mask environment noise and guide you into deep sleep.</p>
+                                </div>
+
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>🌈</span> 
+                                        <strong>7-Color Ambient Lighting</strong>
+                                    </div>
+                                    <p class="feat-desc">Seamless dimming with multi-color cycling and breathing modes, creating the perfect atmosphere for relaxation or meditation.</p>
+                                </div>
+
+                                <div class="feat-item">
+                                    <div class="feat-title-row">
+                                        <span>🌫️</span> 
+                                        <strong>Ultrasonic Aroma Humidifier</strong>
+                                    </div>
+                                    <p class="feat-desc">Advanced ultrasonic technology diffuses essential oils into a fine mist, improving air quality and surrounding you with healing scents.</p>
+                                </div>
+                            </div>
+
+                            <div class="btn-container">
+                                <a href="https://wa.me/8615919964927" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> INQUIRY VIA WHATSAPP
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-outer">
+                    <div class="faq-inner">
+                        <h3 style="text-align: center; font-weight: 800; margin-bottom: 4em; letter-spacing: 3px; color: #000;">FACTORY FAQ & B2B SERVICES</h3>
+                        
+                        <div class="faq-item">
+                            <div class="faq-q">DO YOU SUPPORT OEM/ODM PRIVATE LABELING?</div>
+                            <p class="faq-a">Yes, we offer full customization including logo silk-printing, custom Bluetooth pairing names, and branded packaging box designs.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT IS THE SAMPLE LEAD TIME?</div>
+                            <p class="faq-a">Standard evaluation samples are typically dispatched within 3-5 business days via reliable air courier services.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">DOES THIS DEVICE COMPLY WITH GLOBAL STANDARDS?</div>
+                            <p class="faq-a">Our diffuser lamps are fully CE, RoHS, and FCC certified to ensure safety and quality compliance for international markets.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT IS THE MINIMUM ORDER QUANTITY (MOQ)?</div>
+                            <p class="faq-a">Neutral stock MOQ starts at 50 units. Customized projects with private labeling typically require a minimum order of 500 units.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">CAN I CUSTOMIZE THE PRE-LOADED WHITE NOISE?</div>
+                            <p class="faq-a">For bulk orders, we can customize the built-in sound library or adjust the lighting sequence to match your brand's unique identity.</p>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-q">WHAT ARE YOUR ACCEPTED PAYMENT METHODS?</div>
+                            <p class="faq-a">We accept T/T (Bank Transfer), Alipay Global, and Western Union for secure and convenient transaction processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+          <footer id="footer">
+            <ul class="copyright">
+                <li>&copy; NOVA TECH</li>
+                <li>WhatsApp: +86 159-1996-4927</li>
+                <li>Email: thea@nova-teches.com</li>
+            </ul>
+        </footer>
+    </div>
+
+     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.main-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
